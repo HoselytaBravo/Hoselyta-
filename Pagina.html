@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Camaleón </title>
+    <script>
+        function color()
+        {
+		
+		 let body = document.getElementsByTagName('body')[0];
+        	  body.style.backgroundColor = '#f00';
+
+            //alert("hola");
+            var numaleatorio1=0;
+            var numaleatorio2=0;
+            var numaleatorio3=0;
+            var codigoRGB="";
+
+
+            numaleatorio1= Math.floor(Math.random()*255);
+            numaleatorio2= Math.floor(Math.random()*255);
+            numaleatorio3= Math.floor(Math.random()*255);
+            codigoRGB="rgb("+numaleatorio1+","+numaleatorio2+","+numaleatorio3+")";
+            document.body.style.backgroundColor=codigoRGB;
+            //"rgb(0,0,255)";
+
+        }
+    </script>
+</head>
+<body>
+    <p>BAGROUND COLOR: RED </p> 
+    <input type="button" value="CLICK ME" onclick="color();">
+
+    
+</body>
+</html>
